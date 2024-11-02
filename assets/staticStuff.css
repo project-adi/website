@@ -3,6 +3,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
+  color-scheme: dark !important;
 }
 li {
   list-style: none;
@@ -111,15 +114,17 @@ contents {
   height: 100%;
   display: flex;
   background-color: rgb(66, 66, 66);
+  color: white;
 }
 /* footer */
 footer {
   position: relative;
+  background-color: black;
   bottom: 1;
 }
 
 .useful_info {
-  color:gray;
+  color:white;
 }
 
 .useful_link {

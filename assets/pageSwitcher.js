@@ -24,7 +24,7 @@ function includeHTML() {
             }
         }
 
-        var newfile = file.substring(0, file.length - 5) + ".js";
+        var newfile = "assets/" + file.substring(0, file.length - 5) + ".js";
 
         newxhttp.open("GET", newfile , true);
         newxhttp.send();
@@ -42,7 +42,7 @@ function fillPage(){
 	var fragment = window.location.hash.substring(1);
 	if(fragment == ""){
         fragment = "home";
-        document.title = "Project ADI: The New Driver Interface";
+        document.title = "Project ADI: The Next Generation Driver Interface";
     } else {
         document.title = "Project ADI - " + fragment.charAt(0).toUpperCase() + fragment.slice(1);
 
@@ -68,6 +68,10 @@ function navigateToPage(newpage){
 
     document.getElementById("menuToggle").checked = false;
 }
+
+window.addEventListener('hashchange', function() {
+    navigateToPage(location.hash.substring(1)); // get the hash and remove the leading #
+});
 
 document.addEventListener("DOMContentLoaded", function() {
 	includeHTML();

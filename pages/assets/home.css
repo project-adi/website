@@ -1,5 +1,69 @@
-#home {
-    display:block;
-    color: red;
-    font-size: 60px;
-} 
+/* Banner Styles */
+.banner {
+    display: flex;
+    width:100%;
+    height: 10%;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 146, 175) 100%);
+}
+
+.banner h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0; 
+    filter: none;
+}
+
+
+grid {
+    position: absolute;
+    display:flex;
+    padding-top: 3%;
+}
+
+section {
+    padding-top: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.features-grid .feature {
+    background: rgb(41, 41, 41);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources li {
+    margin: 10px 0;
+}
+
+#about {
+    background: rgb(41, 41, 41);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px ;
+}
+
+#resources {
+    background: rgb(41, 41, 41);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
