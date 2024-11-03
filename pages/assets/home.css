@@ -15,7 +15,6 @@
     filter: none;
 }
 
-
 grid {
     position: absolute;
     display:flex;
@@ -24,6 +23,11 @@ grid {
 
 section {
     padding-top: 40px;
+    max-width: 40%;
+}
+
+section h2 {
+    text-align: center;
 }
 
 .container {
@@ -54,7 +58,7 @@ section {
     margin: 10px 0;
 }
 
-#about {
+#about{
     background: rgb(41, 41, 41);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,4 +70,13 @@ section {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+}
+/*Mobile support*/
+@media screen and (max-width: 768px) {
+    grid {
+        display: block;
+    }
+    section {
+        max-width: 100%;
+    }
 }

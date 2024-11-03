@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  font-family: "Open Sans", sans-serif;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -7,6 +11,12 @@ html, body {
   color: white;
   color-scheme: dark !important;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   list-style: none;
 }
@@ -61,7 +71,38 @@ header {
 .menu-icon {
   display: none;
 }
-/* navigation < 768px*/
+
+contents {
+  flex: 1; /* Takes up remaining space */
+  display: flex;
+  flex-direction: column; /* Stack child elements */
+  background-color: rgb(66, 66, 66);
+  color: white;
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding-bottom: 40px; /* Add padding equal to footer height */
+  box-sizing: border-box; /* Ensure padding is included in the height */
+}
+/* footer */
+footer {
+  height: 200px;
+  position: relative;
+  background-color: black;
+  bottom: 1;
+}
+
+.useful_info {
+  color:white;
+}
+
+.useful_link {
+  text-decoration: none;
+  cursor:grab;
+  color:lightgray;
+  display:flex;
+  margin-left: 3%;
+}
+
+/* Mobile support*/
 @media screen and (max-width: 768px) {
   .menu {
       width: 100%;
@@ -107,30 +148,4 @@ header {
       font-size: 1.7em;
       color:#fff;
   }
-}
-
-contents {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: rgb(66, 66, 66);
-  color: white;
-}
-/* footer */
-footer {
-  position: relative;
-  background-color: black;
-  bottom: 1;
-}
-
-.useful_info {
-  color:white;
-}
-
-.useful_link {
-  text-decoration: none;
-  cursor:grab;
-  color:lightgray;
-  display:flex;
-  margin-left: 3%;
 }
